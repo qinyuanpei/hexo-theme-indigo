@@ -1,4 +1,4 @@
-<% if (theme.duoshuo && post.comments){ %>
+<% if (!index && theme.duoshuo && post.comments){ %>
 <%- partial('duoshuo', {
     key: post.slug,
     title: post.title,
@@ -6,7 +6,7 @@
   }) %>
 <% } %>
 
-<% if (post.comments && config.disqus_shortname){ %>
+<% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread"></div>
     <script type="text/javascript">

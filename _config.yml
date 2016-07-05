@@ -1,68 +1,48 @@
-# hexo-theme-indigo
-# https://github.com/yscoder/hexo-theme-indigo
-
-#添加新菜单项遵循以下规则
-# menu:
-#  link:               fontawesome图标，省略前缀，本主题前缀为 icon-，必须
-#    text: About       菜单显示的文字，如果省略即默认与图标一致，首字母会转大写
-#    url: /about       链接，绝对或相对路径，必须。
-#    target: _blank    是否跳出，省略则在当前页面打开
+# menu
 menu:
   home:
-    text: 主页
-    url: /
+    href: /
+    title: 首 页
   archives:
-    url: /archives
+    href: /archives
+    title: 归 档
   tags:
-    url: /tags
-  github:
-    url: https://github.com/yscoder
-    target: _blank
-  weibo:
-    url: http://www.weibo.com/ysweb
-    target: _blank
-  link:
-    text: 测试
-    url: /404
-
+    href: /tags
+    title: 标 签
+  links:
+    href: /about
+    title: 关 于
+  
+# rss
 rss: /atom.xml
 
-#你的头像url
-avatar: /img/logo.jpg
-
-# email
-email: 634206017@qq.com
-
-# 设置 Android L Chrome 浏览器状态栏颜色
-color: '#3F51B5'
+# avatar
+avatar: /assets/images/logo.jpg
 
 # Content
 tags:
   title: 标签
 
-excerpt_link: more
+# mathjax
 mathjax: false
+
+# archive
 archive_yearly: true
 
-#是否开启分享
+# share
 share: true
 
-#是否开启搜索
+# search
 search: true
 
-#是否大屏幕下文章页隐藏导航
+# 
 hideMenu: true
 
-#是否开启toc
-#toc: false
+# toc
 toc:
   list_number: false  # 是否显示数字排序
 
-#站长统计，如要开启，输入CNZZ站点id，如 cnzz: 1255152447
-cnzz: false
-
-# Miscellaneous
-google_analytics: ''
+# favicon
 favicon: /favicon.ico
 
 # less
@@ -70,6 +50,16 @@ less:
   paths:
     - source/css/style.less
 
-#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
-#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
-duoshuo: ysblog
+# comment
+duoshuo: qinyuanpei
+
+# award
+award:
+  license: by-nc-nd
+  copyright: 本文采用国际知识共享“<b>署名</b>-<b>非商业使用</b>-<b>禁止演绎</b>”协议4.0进行授权许可。未经本人同意禁止转载本文内容，转载请注明作者姓名和文章出处。
+
+# reard
+reward:
+  weixin: /assets/images/weixin.png 
+  alipay: /assets/images/alipay.png
+  

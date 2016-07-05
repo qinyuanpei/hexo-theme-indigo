@@ -1,0 +1,86 @@
+<% if (theme.reward && post.layout=="post"){ %>
+	<style type="text/css">
+		.reward {
+			background:#fff;
+			text-align:center
+		}
+		.reward .inner {
+			display:inline-block;
+			margin-bottom:40px;
+		}
+		.reward .reward-shap {
+			border-radius:100%
+		}
+		.reward a {
+			display:block;
+			width:60px;
+			height:60px;
+			border:1px solid #eee;
+			border-radius:100%;
+			line-height:58px;
+			text-align:center;
+			color:#fff;
+			font-size:24px;
+			background:#F44336;
+			position:relative
+		}
+		.reward a:hover .code {
+			display:block
+		}
+		.reward div {
+			color:#666;
+			margin-top:4px
+		}
+		.reward .code {
+			position:absolute;
+			padding:20px;
+			border:1px solid #e6e6e6;
+			background-color:#fff;
+			line-height:14px;
+			width:160px;
+			height:170px;
+			top:-180px;
+			left:50%;
+			-webkit-transform:translate3d(-50%, 0, 0);
+			transform:translate3d(-50%, 0, 0);
+			display:none
+		}
+		.reward .code:before,.reward .code:after {
+			position:absolute;
+			content:"";
+			border:10px solid transparent
+		}
+		.reward .code:before {
+			border-top-color:#e6e6e6;
+			left:50%;
+			margin-left:-10px;
+			bottom:-20px
+		}
+		.reward .code:after {
+			border-top-color:#fff;
+			left:50%;
+			margin-left:-10px;
+			bottom:-19px
+		}
+		.reward .code img {
+			width:120px;
+			height:120px
+		}
+		.reward .code b {
+			color:#333;
+			font-size:12px;
+			font-weight:normal
+		}
+	</style>
+	<section class="reward">
+		<div class="inner">
+			<div class="reward-shap">
+				<a>赏
+					<span class="code">
+						<img alt="使用微信扫描二维码打赏" src="<%- theme.reward.weixin %>">
+					</span>
+				</a>
+			</div>
+		</div>
+	</section>
+<% } %>  
